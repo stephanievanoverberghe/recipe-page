@@ -1,0 +1,62 @@
+@use 'attribution';
+@use 'variables';
+@use 'media-queries' as *;
+@use 'bases';
+
+// .background-image {
+//     background: url(./../images/image-omelette.jpeg) center center/cover;
+// }
+
+.container {
+    padding: 3rem;
+
+    .description {
+        padding: 2rem 0;
+    }
+
+    .preparation-time {
+        background: var(--rose-white);
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+
+    .preparation-title {
+        color: var(--dark-raspberry);
+        font-weight: 700;
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    ul,
+    ol {
+        padding: 0 3rem;
+
+        li {
+            // padding-bottom: 2rem;
+            padding-left: 2rem;
+        }
+    }
+
+    section {
+        .list-items {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    }
+
+    table {
+
+        td {
+            border-bottom: 1px solid var(--light-grey);
+            width: 100%;
+            padding: 1rem 0;
+            padding-left: 3rem;
+        }
+
+        .span {
+            color: var(--dark-raspberry);
+            font-weight: 700;
+            padding-right: 13rem;
+        }
+    }
+}

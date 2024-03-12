@@ -106,6 +106,21 @@ hr {
   color: var(--light-grey);
 }
 
+header {
+  height: 20rem;
+  background: url(./../images/image-omelette.jpeg) center center/cover;
+}
+@media only screen and (min-width: 768px) {
+  header {
+    height: 25rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  header {
+    height: 50rem;
+  }
+}
+
 .container {
   padding: 3rem;
 }

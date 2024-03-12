@@ -3,9 +3,18 @@
 @use 'media-queries' as *;
 @use 'bases';
 
-// .background-image {
-//     background: url(./../images/image-omelette.jpeg) center center/cover;
-// }
+header {
+    height: 20rem;
+    background: url(./../images/image-omelette.jpeg) center center/cover;
+
+    @include md {
+        height: 25rem;
+    }
+
+    @include lg {
+        height: 50rem;
+    }
+}
 
 .container {
     padding: 3rem;

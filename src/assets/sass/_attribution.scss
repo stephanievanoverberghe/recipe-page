@@ -1,8 +1,16 @@
 .attribution {
     font-size: 11px;
     text-align: center;
-}
+    padding: 2rem 0;
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+    a {
+        color: hsl(228, 45%, 44%);
+        font-weight: 700;
+        transition: color .3s;
+
+        &:hover {
+            color: var(--dark-raspberry);
+        }
+    }
+
 }

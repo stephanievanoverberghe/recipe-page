@@ -3,6 +3,16 @@
 @use 'media-queries' as *;
 @use 'bases';
 
+
+.container-body {
+    @include lg {
+        width: 70%;
+        background: var(--white);
+        border-radius: 2rem;
+        margin: 10rem 0;
+    }
+}
+
 header {
     height: 20rem;
     background: url(./../images/image-omelette.jpeg) center center/cover;
@@ -13,6 +23,8 @@ header {
 
     @include lg {
         height: 50rem;
+        border-radius: 1rem;
+        margin: 3rem 3rem 0 3rem;
     }
 }
 

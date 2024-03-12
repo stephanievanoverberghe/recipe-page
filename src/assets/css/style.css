@@ -1,10 +1,15 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding: 2rem 0;
 }
-
 .attribution a {
   color: hsl(228, 45%, 44%);
+  font-weight: 700;
+  transition: color 0.3s;
+}
+.attribution a:hover {
+  color: var(--dark-raspberry);
 }
 
 :root {
@@ -66,6 +71,15 @@ body {
   color: var(--wenge-brown);
   font-family: var(--outfit);
 }
+@media only screen and (min-width: 992px) {
+  body {
+    background: var(--eggshell);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 h1 {
   color: var(--dark-charcoal);
@@ -106,6 +120,15 @@ hr {
   color: var(--light-grey);
 }
 
+@media only screen and (min-width: 992px) {
+  .container-body {
+    width: 70%;
+    background: var(--white);
+    border-radius: 2rem;
+    margin: 10rem 0;
+  }
+}
+
 header {
   height: 20rem;
   background: url(./../images/image-omelette.jpeg) center center/cover;
@@ -118,6 +141,8 @@ header {
 @media only screen and (min-width: 992px) {
   header {
     height: 50rem;
+    border-radius: 1rem;
+    margin: 3rem 3rem 0 3rem;
   }
 }
 
